@@ -2,9 +2,8 @@
 A simple program to create an ascii text out of your webcam's video feed.
 
 ## Example:
-<video width="320" height="240" controls>
-  <source src="https://i.imgur.com/cGHuaoY.mp4" type="video/mp4">
-</video>
+
+https://user-images.githubusercontent.com/61117321/167742050-29c2f05d-8b97-4d21-a287-01e356f8ee14.mp4
 
 ## How to use it:
 ```
