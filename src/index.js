@@ -2,25 +2,20 @@ import { VideoCapture } from 'camera-capture'
 
 const asciiDensity = "=====++++++++********#########%%%%%%%%@@@@@@@@@@@@"
 
-const cameraRecorder = new VideoCapture(
-  {
+const cameraRecorder = new VideoCapture({
     width: 150,
-    height: 55,
-  }
-)
+    height: 55
+})
 
-function findIndex(pixelBrightness) 
-{
+function findIndex(pixelBrightness) {
   return Math.floor(pixelBrightness / 255 * asciiDensity.length)
 }
 
 cameraRecorder.addFrameListener(frame => {  
-
   var frameAsciiText = ""
 
-  for (var i = 0 ; i < frame.data.length ; i += 4)
-  {
-    if (i/4 % (frame.width) == 0)
+  for (var i = 0 ; i < frame.data.length ; i += 4) {
+    if (i / 4 % (frame.width) == 0)
       frameAsciiText += "\n"
 
     var r = frame.data[i]
@@ -34,7 +29,6 @@ cameraRecorder.addFrameListener(frame => {
   }
 
   console.log(frameAsciiText)
-
 })
 
 await cameraRecorder.start()
