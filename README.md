@@ -3,7 +3,7 @@ A simple program to create an ascii text out of your webcam's video feed.
 
 ## Example:
 
-https://user-images.githubusercontent.com/61117321/167742050-29c2f05d-8b97-4d21-a287-01e356f8ee14.mp4
+https://user-images.githubusercontent.com/61117321/167742324-aa040d81-c576-402c-9c17-c628543a2039.mp4
 
 ## How to use it:
 ```
