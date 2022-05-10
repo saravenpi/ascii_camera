@@ -1,0 +1,21 @@
+{
+  "name": "ascii_camera",
+  "version": "1.0.0",
+  "description": "video feed to ascii text",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "keywords": [
+    "ascii",
+    "video",
+    "camera"
+  ],
+  "author": "saravenpi",
+  "license": "ISC",
+  "dependencies": {
+    "camera-capture": "^0.0.11",
+    "puppeteer": "^14.0.0"
+  }
+}
